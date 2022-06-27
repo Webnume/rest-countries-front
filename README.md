@@ -1,6 +1,8 @@
 # REST COUNTRIES
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed on Netlify : [Live Demo](https://incandescent-croquembouche-edc9c3.netlify.app/)
+
 
 ## The challenge
 
