@@ -1,5 +1,5 @@
 import "./CountryDetails.scss";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import countriesService from "../../API/countriesServices";
 import CountryBorders from "../CountryBorders/CountryBorders";

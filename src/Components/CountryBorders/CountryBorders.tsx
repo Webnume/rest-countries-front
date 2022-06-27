@@ -1,13 +1,11 @@
-import { ThemeContext, themes } from "../../theme/theme-context";
-import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../../theme/theme-context";
+import { useContext} from "react";
 import "./CountryBorders.scss";
 import { useQuery } from "react-query";
 import countriesService from "../../API/countriesServices";
 import CountryButton from "../CountryButton/CountryButton";
-import { useParams } from "react-router-dom";
 
 function CountryBorders({ bordersCountries }: { bordersCountries: string[] }) {
-  let { countryName } = useParams();
   const theme = useContext(ThemeContext);
   const {
     isLoading,
