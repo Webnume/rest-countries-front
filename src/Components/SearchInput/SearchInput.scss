@@ -1,0 +1,42 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+input {
+  width: 480px;
+  border-radius: 0 0.3rem 0.3rem 0;
+  border: none;
+  outline: none;
+  background-color: $very-light-gray-background;
+  color: $white-dark-text-light-element;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  box-shadow: 3px 3px 9px black;
+
+  &.dark {
+    @include dark($main-theme: false);
+  }
+  &.light {
+    @include light($main-theme: false);
+  }
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  padding-left: 3rem;
+}

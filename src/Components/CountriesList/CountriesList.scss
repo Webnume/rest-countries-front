@@ -1,0 +1,32 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.main {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  &.dark {
+    @include dark($main-theme: true);
+  }
+  &.light {
+    @include light($main-theme: true);
+  }
+  & .filters {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  & .countries-list {
+    // width: 90vw;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

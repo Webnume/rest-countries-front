@@ -1,0 +1,19 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+select {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 3px 3px 9px black;
+
+  &.dark {
+    @include dark($main-theme: false);
+  }
+  &.light {
+    @include light($main-theme: false);
+  }
+}

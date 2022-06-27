@@ -1,0 +1,27 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.top {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &.dark {
+    @include dark($main-theme: false);
+  }
+  &.light {
+    @include light($main-theme: false);
+  }
+  & h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    &.dark {
+      @include dark($main-theme: false);
+    }
+    &.light {
+      @include light($main-theme: false);
+    }
+  }
+}

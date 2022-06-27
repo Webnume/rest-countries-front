@@ -1,0 +1,19 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.country-border {
+  // width: 90vw;
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  // bottom: -115px;
+  &.dark {
+    @include dark($main-theme: true);
+  }
+  &.light {
+    @include light($main-theme: true);
+  }
+}

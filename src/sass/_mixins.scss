@@ -1,0 +1,19 @@
+@import "./variables";
+
+@mixin dark($main-theme) {
+  color: $white-dark-text-light-element;
+  @if $main-theme {
+    background-color: $very-dark-blue-background;
+  } @else {
+    background-color: $dark-blue-elements;
+  }
+}
+
+@mixin light($main-theme) {
+  color: $very-dark-blue-text;
+  @if $main-theme {
+    background-color: $very-light-gray-background;
+  } @else {
+    background-color: $white-dark-text-light-element;
+  }
+}

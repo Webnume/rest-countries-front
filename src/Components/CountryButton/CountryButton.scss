@@ -1,0 +1,24 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+
+.country-button {
+  // width: 138px;
+  // height: 35px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 9px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5rem ;
+
+  &.dark {
+    @include dark($main-theme: true);
+  }
+  &.light {
+    @include light($main-theme: true);
+  }
+}

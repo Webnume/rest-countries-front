@@ -1,0 +1,16 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.theme-toggler-button {
+  cursor: pointer;
+  & i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  &.dark {
+    @include dark($main-theme: false);
+  }
+  &.light {
+    @include light($main-theme: false);
+  }
+}
