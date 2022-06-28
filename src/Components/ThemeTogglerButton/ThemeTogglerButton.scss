@@ -7,6 +7,9 @@
     font-size: 1.5rem;
     margin-right: 1rem;
   }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   &.dark {
     @include dark($main-theme: false);
   }

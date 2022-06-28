@@ -26,9 +26,13 @@ function ThemeTogglerButton() {
           whileTap={{ scale: 0.9 }}
           animate={{ x: move ? 15 : -15 }}
         >
-          <div style={{display:"flex"}}>
-          { theme === "dark" ? <i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>}
-          { theme === "dark" ? "Light Mode" : "Dark Mode"}
+          <div style={{ display: "flex" }}>
+            {theme === "dark" ? (
+              <i className="fa-solid fa-sun"></i>
+            ) : (
+              <i className="fa-solid fa-moon"></i>
+            )}
+            {theme === "dark" ? "Light Mode" : "Dark Mode"}
           </div>
         </motion.div>
       )}

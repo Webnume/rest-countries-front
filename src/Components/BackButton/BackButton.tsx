@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import "./CountryButton.scss";
+import "./BackButton.scss";
 import { motion } from "framer-motion"
 
-function CountryButton({
+function BackButton({
   children,
   link,
   theme,
@@ -15,7 +15,7 @@ function CountryButton({
   return (
     <motion.button
       onClick={() => navigate(link)}
-      className={`country-button ${theme}`}
+      className={`back-button ${theme}`}
       style={
         link === "/"
           ? {
@@ -32,4 +32,4 @@ function CountryButton({
   );
 }
 
-export default CountryButton;
+export default BackButton;
