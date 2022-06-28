@@ -2,9 +2,7 @@
 @import "../../sass/variables";
 
 
-.back-button {
-  // width: 138px;
-  // height: 35px;
+.button {
   padding: 0.5rem;
   text-align: center;
   cursor: pointer;
@@ -14,9 +12,6 @@
   align-items: center;
   justify-content: center;
   margin: .5rem ;
-  @media screen and (max-width: 700px) {
-    margin: 0;
-  }
 
   &.dark {
     @include dark($main-theme: true);

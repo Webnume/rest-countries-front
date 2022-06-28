@@ -16,6 +16,9 @@
   & h1 {
     font-size: 1.2rem;
     font-weight: bold;
+    @media screen and (max-width: 700px) {
+      font-size: 1rem;
+    }
     &.dark {
       @include dark($main-theme: false);
     }

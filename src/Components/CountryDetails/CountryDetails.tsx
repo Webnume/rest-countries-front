@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import countriesService from "../../API/countriesServices";
 import CountryBorders from "../CountryBorders/CountryBorders";
-import BackButton from "../BackButton/BackButton";
+import Button from "../Button/Button";
 
 function CountryDetails({ theme }: { theme: string }) {
   const params = useParams();
@@ -56,10 +56,10 @@ function CountryDetails({ theme }: { theme: string }) {
     <section className={`country-details ${theme}`}>
       <div className="content">
         <div className="left-section">
-          <BackButton link={"/"} theme={theme}>
+          <Button link={"/"} theme={theme}>
             {" "}
             <i className={`fa fa-arrow-left icon ${theme}`}></i>Back
-          </BackButton>
+          </Button>
           <img src={flags.svg} alt="flag" />
         </div>
         <div className="infos-section">

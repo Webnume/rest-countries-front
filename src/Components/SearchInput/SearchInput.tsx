@@ -1,6 +1,6 @@
 import "./SearchInput.scss";
 
-function SearchInput({ theme, onChange }: { theme: string, onChange: any }) {
+function SearchInput({ theme, onChange }: { theme: string; onChange: any }) {
   return (
     <>
       <div className="input-icons">

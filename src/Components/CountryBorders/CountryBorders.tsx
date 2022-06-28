@@ -3,7 +3,7 @@ import { useContext } from "react";
 import "./CountryBorders.scss";
 import { useQuery } from "react-query";
 import countriesService from "../../API/countriesServices";
-import BackButton from "../BackButton/BackButton";
+import Button from "../Button/Button";
 
 function CountryBorders({ bordersCountries }: { bordersCountries: string[] }) {
   const theme = useContext(ThemeContext);
@@ -26,13 +26,13 @@ function CountryBorders({ bordersCountries }: { bordersCountries: string[] }) {
         {"   "}
         {borderCountries === undefined && "none"}
         {borderCountries?.map((country: any, index: number) => (
-          <BackButton
+          <Button
             link={`/country/${country.cca3}`}
             theme={theme.theme}
             key={country.cca3}
           >
             {country.name.common}
-          </BackButton>
+          </Button>
         ))}
       </div>
     </>

@@ -8,6 +8,9 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  @media screen and (max-width: 700px) {
+    height: 200%;
+  }
   &.dark {
     @include dark($main-theme: true);
   }
@@ -18,22 +21,46 @@
     display: flex;
     margin: 0 auto;
     width: 90vw;
+    @media screen and (max-width: 700px) {
+      flex-wrap: wrap;
+    }
+    & .button.home {
+      justify-content: normal;
+      margin: 3rem 0;
+      padding: 0.5rem 1.5rem;
+      @media screen and (max-width: 700px) {
+        margin: 1.5rem 0;
+        padding: 0.2rem 0.5rem;
+      }
+    }
     & img {
       object-fit: cover;
       width: 50vw;
       border-radius: 0.4rem 0.4rem 0 0;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
     }
     & .infos-section {
       margin: 6rem 0;
+      @media screen and (max-width: 700px) {
+        margin: 0;
+      }
       & .country-info {
         position: relative;
         margin: 5rem;
         text-align: left;
+        @media screen and (max-width: 700px) {
+          margin: 0;
+        }
       }
       & h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: bold;
         margin-bottom: 1.8rem;
+        @media screen and (max-width: 700px) {
+          font-size: 1.3rem;
+        }
       }
       & h3 {
         display: inline-block;
@@ -47,6 +74,10 @@
         margin: 0;
         display: flex;
         flex-flow: row wrap;
+        margin: 1rem 0;
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+        }
       }
       & li {
         margin-bottom: 0.4rem;

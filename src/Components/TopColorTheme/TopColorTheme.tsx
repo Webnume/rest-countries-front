@@ -8,7 +8,7 @@ function TopColorTheme() {
   return (
     <>
       <div className={`top ${theme === themes.dark ? "dark" : "light"}`}>
-       <h1>Where in the world?</h1> 
+        <h1>Where in the world?</h1>
         <ThemeTogglerButton />
       </div>
     </>
