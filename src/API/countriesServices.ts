@@ -11,7 +11,6 @@ const apiClient = axios.create({
 
 const findAll = async () => {
   const response = await apiClient.get(`/all`);
-  // response.data.pop();
   return response.data;
 };
 
@@ -25,44 +24,11 @@ const findByListOfCodes = async (codes: any) => {
   return response.data;
 };
 
-// const create = async ({ title, description, content, enabled }) => {
-//   const response = await apiClient.post<any>("/creatives", {
-//     title,
-//     description,
-//     content,
-//     enabled,
-//   });
-//   return response.data;
-// };
 
-// const update = async ({ id, ...data }) => {
-//   const response = await apiClient.put<any>(`/creatives/${id}`, {
-//     id,
-//     ...data,
-//   });
-//   return response.data;
-// };
-
-// const deleteById = async (id: any) => {
-//   const response = await apiClient.delete<any>(`/creatives/${id}`);
-//   return response.data;
-// };
-
-// const deleteAll = async () => {
-//   const response = await apiClient.delete<any>("/creatives");
-//   return response.data;
-// };
 
 const CreativeService = {
   findAll,
-  // findAllWithPagination,
-  // findById,
   findByCode,
   findByListOfCodes,
-  // findByTitle,
-  // create,
-  // update,
-  // deleteById,
-  // deleteAll,
 };
 export default CreativeService;

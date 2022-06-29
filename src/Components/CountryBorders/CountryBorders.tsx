@@ -25,7 +25,7 @@ function CountryBorders({ bordersCountries }: { bordersCountries: string[] }) {
         <h3>Border Countries:</h3>
         {"   "}
         {borderCountries === undefined && "none"}
-        {borderCountries?.map((country: any, index: number) => (
+        {borderCountries?.map((country: any) => (
           <Button
             link={`/country/${country.cca3}`}
             theme={theme.theme}
