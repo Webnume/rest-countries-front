@@ -36,7 +36,12 @@ function CountryDetails({ theme }: { theme: string }) {
     return languagesArray.join(", ");
   };
 
-  if (isLoading) return <>{"Loading..."}</>;
+  if (isLoading)
+    return (
+      <div className={`main ${theme}`}>
+        <span className="loader"></span>
+      </div>
+    );
   if (error) return <>{"An error has occurred: " + error}</>;
 
   const {

@@ -62,7 +62,12 @@ function CountriesList() {
     }
   }, [countries, search, region]);
 
-  if (isLoading) return <>{"Loading..."}</>;
+  if (isLoading)
+    return (
+      <div className={`main ${choosenTheme}`}>
+        <span className="loader"></span>
+      </div>
+    );
 
   if (error) return <>{"An error has occurred: " + error}</>;
   if (!countries) {
